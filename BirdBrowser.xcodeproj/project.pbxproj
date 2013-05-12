@@ -20,11 +20,6 @@
 		B8E7780616C2F3CF00949FEE /* BirdTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E7780516C2F3CF00949FEE /* BirdTableViewController.m */; };
 		B8E7780916C2F43000949FEE /* BirdTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E7780816C2F43000949FEE /* BirdTableViewCell.m */; };
 		B8E7780C16C2F6A700949FEE /* Bird.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E7780B16C2F6A700949FEE /* Bird.m */; };
-		B8E7781216C2FCC600949FEE /* chevy_volt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B8E7780D16C2FCC600949FEE /* chevy_volt.jpg */; };
-		B8E7781316C2FCC600949FEE /* mini_clubman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B8E7780E16C2FCC600949FEE /* mini_clubman.jpg */; };
-		B8E7781416C2FCC600949FEE /* smart_fortwo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B8E7780F16C2FCC600949FEE /* smart_fortwo.jpg */; };
-		B8E7781516C2FCC600949FEE /* toyota_venza.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B8E7781016C2FCC600949FEE /* toyota_venza.jpg */; };
-		B8E7781616C2FCC600949FEE /* volvo_s60.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B8E7781116C2FCC600949FEE /* volvo_s60.jpg */; };
 		B8E7781916C3188D00949FEE /* BirdDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E7781816C3188D00949FEE /* BirdDetailViewController.m */; };
 		B943EDBB17379650007DB011 /* Charadrius_bicinctus_breeding_-_Ralphs_Bay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B943EDB817379650007DB011 /* Charadrius_bicinctus_breeding_-_Ralphs_Bay.jpg */; };
 		B943EDBC17379650007DB011 /* Anthornis_melanura_-New_Zealand-8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B943EDB917379650007DB011 /* Anthornis_melanura_-New_Zealand-8.jpg */; };
@@ -32,6 +27,8 @@
 		B943EDC11738DC9E007DB011 /* silvereye-song-22sy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B943EDC01738DC9E007DB011 /* silvereye-song-22sy.mp3 */; };
 		B943EDF7173A4790007DB011 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B943EDF6173A4790007DB011 /* AVFoundation.framework */; };
 		B9A86A96173FAFF9006908C0 /* DSC09462.JPG in Resources */ = {isa = PBXBuildFile; fileRef = B9A86A95173FAFF9006908C0 /* DSC09462.JPG */; };
+		B9A86A98173FB2C6006908C0 /* bellbird-56.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B9A86A97173FB2C6006908C0 /* bellbird-56.mp3 */; };
+		B9A86A9A173FB2D5006908C0 /* stitchbird-song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B9A86A99173FB2D5006908C0 /* stitchbird-song.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,11 +52,6 @@
 		B8E7780816C2F43000949FEE /* BirdTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BirdTableViewCell.m; sourceTree = "<group>"; };
 		B8E7780A16C2F6A700949FEE /* Bird.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bird.h; sourceTree = "<group>"; };
 		B8E7780B16C2F6A700949FEE /* Bird.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bird.m; sourceTree = "<group>"; };
-		B8E7780D16C2FCC600949FEE /* chevy_volt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chevy_volt.jpg; sourceTree = "<group>"; };
-		B8E7780E16C2FCC600949FEE /* mini_clubman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mini_clubman.jpg; sourceTree = "<group>"; };
-		B8E7780F16C2FCC600949FEE /* smart_fortwo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = smart_fortwo.jpg; sourceTree = "<group>"; };
-		B8E7781016C2FCC600949FEE /* toyota_venza.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = toyota_venza.jpg; sourceTree = "<group>"; };
-		B8E7781116C2FCC600949FEE /* volvo_s60.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = volvo_s60.jpg; sourceTree = "<group>"; };
 		B8E7781716C3188D00949FEE /* BirdDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BirdDetailViewController.h; sourceTree = "<group>"; };
 		B8E7781816C3188D00949FEE /* BirdDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BirdDetailViewController.m; sourceTree = "<group>"; };
 		B943EDB817379650007DB011 /* Charadrius_bicinctus_breeding_-_Ralphs_Bay.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Charadrius_bicinctus_breeding_-_Ralphs_Bay.jpg"; sourceTree = "<group>"; };
@@ -68,6 +60,8 @@
 		B943EDC01738DC9E007DB011 /* silvereye-song-22sy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "silvereye-song-22sy.mp3"; sourceTree = "<group>"; };
 		B943EDF6173A4790007DB011 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		B9A86A95173FAFF9006908C0 /* DSC09462.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DSC09462.JPG; sourceTree = "<group>"; };
+		B9A86A97173FB2C6006908C0 /* bellbird-56.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "bellbird-56.mp3"; path = "assets/bellbird/bellbird-56.mp3"; sourceTree = SOURCE_ROOT; };
+		B9A86A99173FB2D5006908C0 /* stitchbird-song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "stitchbird-song.mp3"; path = "assets/stitchbird_hihi/stitchbird-song.mp3"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,16 +130,13 @@
 		B8E777E816C2F2F400949FEE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B9A86A99173FB2D5006908C0 /* stitchbird-song.mp3 */,
+				B9A86A97173FB2C6006908C0 /* bellbird-56.mp3 */,
 				B9A86A95173FAFF9006908C0 /* DSC09462.JPG */,
 				B943EDC01738DC9E007DB011 /* silvereye-song-22sy.mp3 */,
 				B943EDB817379650007DB011 /* Charadrius_bicinctus_breeding_-_Ralphs_Bay.jpg */,
 				B943EDB917379650007DB011 /* Anthornis_melanura_-New_Zealand-8.jpg */,
 				B943EDBA17379650007DB011 /* Hihi_(Stitchbird)-1.jpg */,
-				B8E7780D16C2FCC600949FEE /* chevy_volt.jpg */,
-				B8E7780E16C2FCC600949FEE /* mini_clubman.jpg */,
-				B8E7780F16C2FCC600949FEE /* smart_fortwo.jpg */,
-				B8E7781016C2FCC600949FEE /* toyota_venza.jpg */,
-				B8E7781116C2FCC600949FEE /* volvo_s60.jpg */,
 				B8E777E916C2F2F400949FEE /* BirdBrowser-Info.plist */,
 				B8E777EA16C2F2F400949FEE /* InfoPlist.strings */,
 				B8E777ED16C2F2F400949FEE /* main.m */,
@@ -213,16 +204,13 @@
 				B8E777F616C2F2F400949FEE /* Default@2x.png in Resources */,
 				B8E777F816C2F2F400949FEE /* Default-568h@2x.png in Resources */,
 				B8E777FB16C2F2F400949FEE /* MainStoryboard.storyboard in Resources */,
-				B8E7781216C2FCC600949FEE /* chevy_volt.jpg in Resources */,
-				B8E7781316C2FCC600949FEE /* mini_clubman.jpg in Resources */,
-				B8E7781416C2FCC600949FEE /* smart_fortwo.jpg in Resources */,
-				B8E7781516C2FCC600949FEE /* toyota_venza.jpg in Resources */,
-				B8E7781616C2FCC600949FEE /* volvo_s60.jpg in Resources */,
 				B943EDBB17379650007DB011 /* Charadrius_bicinctus_breeding_-_Ralphs_Bay.jpg in Resources */,
 				B943EDBC17379650007DB011 /* Anthornis_melanura_-New_Zealand-8.jpg in Resources */,
 				B943EDBD17379650007DB011 /* Hihi_(Stitchbird)-1.jpg in Resources */,
 				B943EDC11738DC9E007DB011 /* silvereye-song-22sy.mp3 in Resources */,
 				B9A86A96173FAFF9006908C0 /* DSC09462.JPG in Resources */,
+				B9A86A98173FB2C6006908C0 /* bellbird-56.mp3 in Resources */,
+				B9A86A9A173FB2D5006908C0 /* stitchbird-song.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

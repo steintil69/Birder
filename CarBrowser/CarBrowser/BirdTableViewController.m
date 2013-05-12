@@ -37,9 +37,9 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     [self setBirds:@[
-     [Bird birdWithName:@"Hihi" maoriname:@"Stitchbird" image:[UIImage imageNamed:@"Hihi_(Stitchbird)-1.jpg"] sound:@"stitchbird-song"],
-     [Bird birdWithName:@"Charadricus" maoriname:@"Charadricus" image:[UIImage imageNamed:@"Charadrius_bicinctus_breeding_-_Ralphs_Bay.jpg"]sound:@"silvereye-song-22sy"],
-     [Bird birdWithName:@"Bellbird" maoriname:@"Bellbird" image:[UIImage imageNamed:@"Anthornis_melanura_-New_Zealand-8.jpg"]sound:@"bellbird-56"]
+     [Bird birdWithName:@"Hihi" maoriname:@"Stitchbird" image:[UIImage imageNamed:@"Hihi_(Stitchbird)-1.jpg"]],
+     [Bird birdWithName:@"Charadricus" maoriname:@"Charadricus" image:[UIImage imageNamed:@"Charadrius_bicinctus_breeding_-_Ralphs_Bay.jpg"]],
+     [Bird birdWithName:@"Bellbird" maoriname:@"Bellbird" image:[UIImage imageNamed:@"Anthornis_melanura_-New_Zealand-8.jpg"]]
      ]];
 }
 
@@ -51,7 +51,7 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([[segue identifier] isEqualToString:@"ShowCarDetails"])
+    if ([[segue identifier] isEqualToString:@"showBirdDetails"])
     {
         BirdDetailViewController *vc = [segue destinationViewController];
         int row = [[[self tableView] indexPathForSelectedRow] row];
@@ -76,7 +76,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"carTableCell";
+    static NSString *CellIdentifier = @"birdTableCell";
     BirdTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
 	if (!cell)
@@ -87,9 +87,9 @@
     }
 	Bird *car = [[self birds] objectAtIndex:[indexPath row]];
     
-	[[cell makeLabel] setText:[car name]];
-	[[cell modelLabel] setText:[car maoriname]];
-	[[cell carImageView] setImage:[car image]];
+	[[cell nameLabel] setText:[car name]];
+	[[cell otherNameLabel] setText:[car maoriname]];
+	[[cell birdImageView] setImage:[car image]];
     
     return cell;
 }

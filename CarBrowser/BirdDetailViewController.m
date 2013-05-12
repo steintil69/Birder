@@ -33,9 +33,9 @@
     [[self makeLabel] setText:[[self bird] name]];
     [[self modelLabel] setText:[[self bird] maoriname]];
     [[self imageView] setImage:[[self bird] image]];
-    //[[self sound] setSound:[[self bird] sound]];
+    [[self soundLabel] setText:[[self bird] sound]];
     NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle]
-                                         pathForResource:@"silvereye-song-22sy"                                         ofType:@"mp3"]];
+                                         pathForResource:[[self bird ]sound]                                        ofType:@"mp3"]];
     
     NSError *error;
     audioPlayer = [[AVAudioPlayer alloc]

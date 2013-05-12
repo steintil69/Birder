@@ -8,7 +8,7 @@
 
 #import "BirdDetailViewController.h"
 #import "Bird.h"
-
+#import "BirdDescriptionViewController.h"
 
 @interface BirdDetailViewController ()
 
@@ -30,14 +30,12 @@
 {
     [super viewDidLoad];
     
-    [[self makeLabel] setText:[[self bird] name]];
-    [[self modelLabel] setText:[[self bird] maoriname]];
-    [[self imageView] setImage:[[self bird] image]];
+    [[self nameLabel] setText:[[self bird] name]];
+    [[self otherNameLabel] setText:[[self bird] maoriname]];
+    [[self birdImageView] setImage:[[self bird] image]];
     // [[self audiodata] setAudiofile:[[self bird] mpthree]];
     NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle]
-                                         pathForResource:[[self bird ]sound]                                        ofType:@"mp3"]];
-    
-                                         //pathForResource:sound                                         ofType:@"mp3"]];
+                                         pathForResource:@"silvereye-song-22sy"                                         ofType:@"mp3"]];
     
     NSError *error;
     audioPlayer = [[AVAudioPlayer alloc]
@@ -69,6 +67,15 @@
 //        audioPlayer.volume = volumeControl.value;
 //    }
 //}
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"ShowBirdDescription"])
+    {
+        BirdDescriptionViewController *vc = [segue destinationViewController];
+        
+        //[vc setDescriptionLabel:[[self makeLabel] description]];
+    }
+}
 
 
 

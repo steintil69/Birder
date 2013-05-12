@@ -37,10 +37,10 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     [self setBirds:@[
-     [Bird birdWithName:@"Hihi" maoriname:@"Stitchbird" image:[UIImage imageNamed:@"Hihi_(Stitchbird)-1.jpg"] sound:@"sound1"],
-     [Bird birdWithName:@"Silvereye" maoriname:@"Waxeye" image:[UIImage imageNamed:@"DSC09462.JPG"] sound:@"sound1"],
-     [Bird birdWithName:@"Charadricus" maoriname:@"Charadricus" image:[UIImage imageNamed:@"Charadrius_bicinctus_breeding_-_Ralphs_Bay.jpg"] sound:@"sound1"],
-     [Bird birdWithName:@"Bellbird" maoriname:@"Bellbird" image:[UIImage imageNamed:@"Anthornis_melanura_-New_Zealand-8.jpg"] sound:@"sound1"]
+     [Bird birdWithName:@"Hihi" maoriname:@"Stitchbird" image:[UIImage imageNamed:@"Hihi_(Stitchbird)-1.jpg"] sound:@"silvereye-song-22sy"],
+     [Bird birdWithName:@"Silvereye" maoriname:@"Waxeye" image:[UIImage imageNamed:@"DSC09462.JPG"] sound:@"silvereye-song-22sy"],
+     [Bird birdWithName:@"Banded dotterel" maoriname:@"Charadricus" image:[UIImage imageNamed:@"Charadrius_bicinctus_breeding_-_Ralphs_Bay.jpg"] sound:@"bellbird-56"],
+     [Bird birdWithName:@"Bellbird" maoriname:@"Bellbird" image:[UIImage imageNamed:@"Anthornis_melanura_-New_Zealand-8.jpg"] sound:@"bellbird-56"]
      ]];
     
 }

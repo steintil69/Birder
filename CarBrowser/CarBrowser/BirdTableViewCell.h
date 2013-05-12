@@ -10,9 +10,10 @@
 
 @interface BirdTableViewCell : UITableViewCell
 
-@property (weak, nonatomic) IBOutlet UIImageView *carImageView;
-@property (weak, nonatomic) IBOutlet UILabel *makeLabel;
-@property (weak, nonatomic) IBOutlet UILabel *modelLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *birdImageView;
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *otherNameLabel;
+
 
 
 @end

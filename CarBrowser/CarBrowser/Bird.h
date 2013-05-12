@@ -13,8 +13,8 @@
 @property (copy, nonatomic) NSString *name;
 @property (copy, nonatomic) NSString *maoriname;
 @property (strong, nonatomic) UIImage *image;
-@property (strong, nonatomic) NSString *sound;
+//@property (strong, nonatomic) UIImage *sound;
 
-+ (Bird *)birdWithName:(NSString *)make maoriname:(NSString *)model image:(UIImage *)image sound:(NSString *)sound;
++ (Bird *)birdWithName:(NSString *)make maoriname:(NSString *)model image:(UIImage *)image;
 
 @end

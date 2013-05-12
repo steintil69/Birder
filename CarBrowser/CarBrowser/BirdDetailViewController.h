@@ -12,22 +12,21 @@
 @class Bird;
 
 @interface BirdDetailViewController : UIViewController
-//@interface ViewController : UIViewController
+
 <AVAudioPlayerDelegate>
 {
     AVAudioPlayer *audioPlayer;
     //UISlider *volumeControl;
 }
+
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *otherNameLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *birdImageView;
 //@property (nonatomic, retain) IBOutlet UISlider *volumeControl;
-
-//-(IBAction) stopAudio;
-//-(IBAction) adjustVolume;
-//@end
-@property (weak, nonatomic) IBOutlet UILabel *makeLabel;
-@property (weak, nonatomic) IBOutlet UILabel *modelLabel;
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
-
 @property (weak, nonatomic) Bird *bird;
 -(IBAction) playAudio;
+//-(IBAction) stopAudio;
+//-(IBAction) adjustVolume;
+
 
 @end

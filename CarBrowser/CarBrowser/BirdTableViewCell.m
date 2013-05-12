@@ -8,6 +8,7 @@
 
 #import "BirdTableViewCell.h"
 
+//#import "Bird.h"
 @implementation BirdTableViewCell
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
@@ -25,5 +26,7 @@
 
     // Configure the view for the selected state
 }
+
+
 
 @end

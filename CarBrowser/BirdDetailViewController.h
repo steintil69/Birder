@@ -26,6 +26,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *makeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *modelLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UILabel *soundLabel;
 
 @property (weak, nonatomic) Bird *bird;
 -(IBAction) playAudio;

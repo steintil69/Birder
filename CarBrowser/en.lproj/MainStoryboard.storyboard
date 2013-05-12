@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--Bird Table View Controller-->
+        <!--Bird Table View Controller - Item-->
         <scene sceneID="aqi-fA-83F">
             <objects>
                 <tableViewController id="h7b-OS-VmV" customClass="BirdTableViewController" sceneMemberID="viewController">
@@ -67,11 +67,12 @@
                             <outlet property="delegate" destination="h7b-OS-VmV" id="IRP-rX-dcc"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" id="jWF-8o-85N"/>
                     <navigationItem key="navigationItem" id="cOE-08-mxq"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G8p-S2-vaT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="588" y="102"/>
+            <point key="canvasLocation" x="1114" y="102"/>
         </scene>
         <!--Bird Detail View Controller-->
         <scene sceneID="MDl-cJ-NMK">
@@ -89,8 +90,11 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Maori name" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4a-mX-QHF">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Other name" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4a-mX-QHF">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="sTB-bZ-D7d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -103,13 +107,17 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J8E-2e-NEl">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="155" id="7N0-77-qLS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OEQ-aH-A8X">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="OEQ-aH-A8X">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="274" id="746-82-fqf"/>
+                                    <constraint firstAttribute="height" constant="307" id="F9e-Nb-ccr"/>
+                                    <constraint firstAttribute="width" constant="326" id="hEU-f3-dzc"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eqh-0q-XDh">
@@ -125,23 +133,33 @@
                                     <action selector="playAudio" destination="GGQ-GR-o2l" eventType="touchUpInside" id="ClJ-6P-VQs"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="SoundLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZpF-RQ-Zq9">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="115" id="sOa-Of-w0G"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Eqh-0q-XDh" firstAttribute="leading" secondItem="TDm-Cf-Sby" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="1Z7-5u-aEw"/>
-                            <constraint firstItem="p4a-mX-QHF" firstAttribute="leading" secondItem="TDm-Cf-Sby" secondAttribute="leading" constant="29" id="2Oy-OE-49A"/>
-                            <constraint firstItem="J8E-2e-NEl" firstAttribute="leading" secondItem="FNF-Nm-gFx" secondAttribute="leading" type="default" id="6Gn-5t-IjE"/>
-                            <constraint firstItem="OEQ-aH-A8X" firstAttribute="top" secondItem="p4a-mX-QHF" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="JgZ-Nh-LYo"/>
-                            <constraint firstItem="OEQ-aH-A8X" firstAttribute="leading" secondItem="TDm-Cf-Sby" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Ksm-G5-C22"/>
-                            <constraint firstItem="5Yt-md-C4m" firstAttribute="leading" secondItem="TDm-Cf-Sby" secondAttribute="leading" constant="-19" id="Pn7-q7-0V7"/>
-                            <constraint firstItem="J8E-2e-NEl" firstAttribute="baseline" secondItem="p4a-mX-QHF" secondAttribute="baseline" type="default" id="QL6-mG-SaH"/>
-                            <constraint firstAttribute="trailing" secondItem="OEQ-aH-A8X" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Ze8-vY-vko"/>
-                            <constraint firstItem="J8E-2e-NEl" firstAttribute="trailing" secondItem="FNF-Nm-gFx" secondAttribute="trailing" type="default" id="jW9-e0-6Cr"/>
-                            <constraint firstItem="FNF-Nm-gFx" firstAttribute="baseline" secondItem="5Yt-md-C4m" secondAttribute="baseline" type="default" id="jfc-M6-Bfw"/>
-                            <constraint firstAttribute="bottom" secondItem="Eqh-0q-XDh" secondAttribute="bottom" constant="76" id="kKy-wa-H4g"/>
-                            <constraint firstItem="p4a-mX-QHF" firstAttribute="top" secondItem="TDm-Cf-Sby" secondAttribute="top" constant="82" id="lxI-Sw-cfn"/>
-                            <constraint firstItem="5Yt-md-C4m" firstAttribute="top" secondItem="TDm-Cf-Sby" secondAttribute="top" constant="37" id="mP6-uJ-yAK"/>
-                            <constraint firstItem="FNF-Nm-gFx" firstAttribute="leading" secondItem="TDm-Cf-Sby" secondAttribute="leading" constant="139" id="uDQ-6B-nZe"/>
+                            <constraint firstItem="OEQ-aH-A8X" firstAttribute="top" secondItem="TDm-Cf-Sby" secondAttribute="top" constant="105" id="5sF-oK-fNa"/>
+                            <constraint firstItem="FNF-Nm-gFx" firstAttribute="top" secondItem="Eqh-0q-XDh" secondAttribute="top" type="default" id="70M-IZ-4Ye"/>
+                            <constraint firstItem="OEQ-aH-A8X" firstAttribute="leading" secondItem="TDm-Cf-Sby" secondAttribute="leading" type="default" id="BmM-WR-KDu"/>
+                            <constraint firstItem="p4a-mX-QHF" firstAttribute="leading" secondItem="5Yt-md-C4m" secondAttribute="leading" type="default" id="Bwt-zC-jmm"/>
+                            <constraint firstItem="5Yt-md-C4m" firstAttribute="leading" secondItem="TDm-Cf-Sby" secondAttribute="leading" constant="25" id="FSf-HS-wgc"/>
+                            <constraint firstItem="p4a-mX-QHF" firstAttribute="top" secondItem="TDm-Cf-Sby" secondAttribute="top" constant="39" id="HKV-2E-CmO"/>
+                            <constraint firstItem="5Yt-md-C4m" firstAttribute="baseline" secondItem="FNF-Nm-gFx" secondAttribute="baseline" type="default" id="Kgk-1N-QRN"/>
+                            <constraint firstItem="5Yt-md-C4m" firstAttribute="top" secondItem="TDm-Cf-Sby" secondAttribute="top" constant="11" id="Ozv-mi-poI"/>
+                            <constraint firstItem="FNF-Nm-gFx" firstAttribute="leading" secondItem="TDm-Cf-Sby" secondAttribute="leading" constant="95" id="SGI-9R-afK"/>
+                            <constraint firstItem="J8E-2e-NEl" firstAttribute="leading" secondItem="p4a-mX-QHF" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="Si4-CF-Ag4"/>
+                            <constraint firstItem="J8E-2e-NEl" firstAttribute="baseline" secondItem="p4a-mX-QHF" secondAttribute="baseline" type="default" id="Z3p-2N-ddM"/>
+                            <constraint firstItem="ZpF-RQ-Zq9" firstAttribute="top" secondItem="p4a-mX-QHF" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="jLC-RZ-0l0"/>
+                            <constraint firstItem="ZpF-RQ-Zq9" firstAttribute="leading" secondItem="TDm-Cf-Sby" secondAttribute="leading" constant="42" id="lqA-zf-VRF"/>
+                            <constraint firstItem="J8E-2e-NEl" firstAttribute="top" secondItem="p4a-mX-QHF" secondAttribute="top" type="default" id="qRA-4X-I9o"/>
+                            <constraint firstItem="Eqh-0q-XDh" firstAttribute="leading" secondItem="FNF-Nm-gFx" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="vPF-mM-NxV"/>
+                            <constraint firstItem="5Yt-md-C4m" firstAttribute="trailing" secondItem="p4a-mX-QHF" secondAttribute="trailing" type="default" id="ysH-rd-wzU"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6dQ-s8-hBQ"/>
@@ -149,11 +167,12 @@
                         <outlet property="imageView" destination="OEQ-aH-A8X" id="yrY-Ji-q4w"/>
                         <outlet property="makeLabel" destination="FNF-Nm-gFx" id="Z6x-WE-MO2"/>
                         <outlet property="modelLabel" destination="J8E-2e-NEl" id="CJK-gq-OVU"/>
+                        <outlet property="soundLabel" destination="ZpF-RQ-Zq9" id="yGk-wL-tYQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ttj-ws-Yqz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1027" y="101"/>
+            <point key="canvasLocation" x="1553" y="101"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VcB-1B-BE8">
@@ -171,9 +190,35 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V44-pW-EUv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="62" y="102"/>
+            <point key="canvasLocation" x="706" y="102"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="BirdDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BirdDetailViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="playAudio"/>
+                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="makeLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="modelLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="soundLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="BirdTableViewCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BirdTableViewCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="carImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="makeLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="modelLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="BirdTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BirdTableViewController.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
